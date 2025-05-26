@@ -6,6 +6,7 @@
   div{
     background-color: rgb(255, 211, 255);
     margin: 5px;
+    padding: 8px;
     width: 32%;
     display: inline-block;
     border-radius: 8px;
@@ -50,7 +51,7 @@
   #borrar:target {
     display: block;
   }
-  p:first-child{
+  .part3 p:first-child{
     color: tomato;
     font-style: italic;
   }
@@ -67,7 +68,7 @@
     border: 2px solid steelblue;
     outline: none;
   }
-  h3:only-of-type{
+  .part7 h3:only-of-type{
     color: blueviolet;
     font-size: 30px;
     font-style: italic;
@@ -77,15 +78,23 @@
   }
   :root{
     --color:#2b11c4;
+    --color-primario:#ad8925;
+    --colo-fondo: #6d5b6d;
+    --color-texto: #290a0a;
   }
   .part9 h2{
     color: var(--color);
   }
-  nav a:hover{
+  .part10 nav a:hover{
     background-color: yellowgreen;
   }
-  .part11 p::before{
-    
+  ul{
+    list-style-type: none;
+  }
+  h4::before{
+    content: "📞";
+    margin-right: 8px; 
+    font-size: 1.2em; 
   }
   .part12 p:after{
     content: "";
@@ -95,15 +104,166 @@
     background-color: #0b9c95; 
     margin-top: 5px; 
   }
-  .boton {
-    /* position: relative; */
-    padding: 10px 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
+ .part13 .boton {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
     font-size: 16px;
-    border-radius: 4px;
-  }
-  .part13 .boton::after {
-
-  }
+    background-color: #3480b3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1;
+}
+.part13 .boton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    z-index: -1;
+    box-shadow: 0 10px 8px rgb(0, 0, 0); /* sombra difuminada */
+}
+.citas {
+  position: relative;
+  padding: 1em 2em;
+}
+.part14 .citas::before, .citas::after{
+  font-size: 25px;
+  position: absolute;
+}
+.citas::before {
+  content: "“";
+  top: 0;
+  left: 10px;
+}
+.citas::after {
+  content: "”";
+  bottom: 0;
+  right: 10px;
+}
+.part15 .input-icon {
+  position: relative;
+  display: inline-block;
+}
+.input-icon::before {
+  content: "🔍";
+  position: absolute;
+  left: 10px;
+  top: 10%;
+}
+.input-icon input {
+  padding-left: 34px; 
+  height: 32px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;   
+}
+.part16 img{
+  position: relative;
+  left: 100px;
+  width: 200px;
+  height: auto;
+}
+.part17 .box{
+  position: relative;
+  width: 98%;
+  height: 80%;
+  background-color: steelblue;
+}
+.part17 .boton{
+  position: absolute;
+  bottom: 6%;
+  left: 70%;
+  padding: 8px 10px;
+  color: white;
+  background-color: rgb(8, 56, 95);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navegar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(174, 162, 248);
+  color: brown;
+  padding: 15px 0;
+  z-index: 1000;
+}
+.navegar li {
+  display: inline-block;
+  margin: 0 80px;
+}
+.navegar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+}
+.contenido{
+  padding-top: 60px; /* Espacio para no tapar el contenido */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.caja1 {
+  background-color: tomato;
+  top: 80px;
+  left: 80px;
+  z-index: 2;
+}
+.caja2 {
+  background-color: steelblue;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+.part19 ul{
+  text-align: center;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.part20 .card{
+  position: static;
+  transform: translate(15%, 1%);
+  background-color: rgb(64, 224, 208);
+  border-radius: 6px;
+  padding: 5px;
+  width: 80%;
+  text-align: center;
+}
+.part21 h3{
+  color: var(--color-primario);
+}
+.part22 {
+  background-color: var(--colo-fondo);
+  color: var(--color-texto);
+}
+.part23 {
+  background-color: var(--color-loco,steelblue);
+  color: var(--color-x,violet);
+}
+.part24 .card {
+  --color-f: #ff9900;
+  --color-t: #d0ff00;
+  --color-b: #00ff40;
+  background-color: #ff9900;
+  color: #d0ff00;
+  padding: 2%;
+  border-radius: 5px;
+}
+.part24 .card button {
+  background-color: #00ff40;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  font-weight: bold;
+  color: st;
+}

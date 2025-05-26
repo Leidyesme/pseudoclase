@@ -8,95 +8,185 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   </head>
   <body>
-    <div class="part1">
-      <h1>Punto 1</h1>
-      <p>Crea un botón que cambie de color cuando esté en estado :hover.</p>
-      <button type="button">Boton</button>
-    </div>
-    <div class="part2">
-      <h1>Punto 2</h1>
-      <p>Usa :target para mostrar un mensaje oculto al hacer clic en un enlace.</p>
-        <a href="#borrar" type="link">Boton</a>
-      <p id="borrar">comenzamos</p>
-    </div>
-    <div class="part3">
-      <h1>Punto 3</h1>
-      <p>Da un estilo especial al primer hijo de un contenedor usando :first-child.</p>
-      <ul>
-        <p>Ejemplo</p>
-        <p>Ejemplo2</p>
-    </ul>
-    </div>
-    <div class="part4">
-        <h1>Punto 4</h1>
-        <p>Estiliza los campos de formulario no válidos usando :invalid.</p>
-        <input type="text" id="username" name="username" placeholder="username" required>
-        <button type="submit">Enviar</button>
-    </div>
-    <div class="part5">
-        <h1>Punto 5</h1>
-        <p>Resalta solo los campos de tipo email con :type.</p>
-        <input type="text" id="username" name="username" placeholder="username" required>
-        <input type="email" placeholder="Your email address" required>
-        <button type="submit">Enviar</button>
-    </div>
-    <div class="part6">
-        <h1>Punto 6</h1>
-        <p>Diseña un formulario donde el campo activo (:focus) cambie de borde.</p>
-        <input type="text" id="username" name="username" placeholder="username" required>
-        <input type="email" placeholder="Your email address" required>
-        <button type="submit">Enviar</button>
-    </div>
-    <div class="part7">
-        <h1>Punto 7</h1>
-        <p>Estiliza únicamente los elementos únicos de su tipo con :only-of-type.</p>
-        <h3>hola como estas</h3>
-    </div>
-    <div class="part8">
-        <h1>Punto 8</h1>
-        <h4>Aplica estilo solo al primer párrafo de una sección con :first-of-type.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, nostrum non deleniti qui quam incidunt consequuntur, facilis aspernatur itaque veritatis nobis ipsam rerum illo ut debitis consectetur obcaecati excepturi vel.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio dignissimos molestias magnam officia natus. Fugiat, labore. Nihil, perspiciatis aspernatur? Vitae accusantium sunt harum? Dolores tempore aut praesentium laudantium ut.</p>
-    </div>
-    <div class="part9">
-        <h1>Punto 9</h1>
-        <p>Usa :root para definir una variable de color y aplícala.</p>
-        <h2>Fine</h2>
-    </div>
-    <div class="part10">
-        <h1>Punto 10</h1>
-        <p>Diseña una navegación con sus etiquetas semanticas que cambie su color al pasar
-            sobre cada link.</p>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Acerca de</a></li>
-                <li><a href="#">Contacto</a></li>
+    <nav class="navegar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+    <ul class="contenido">
+        <div class="part1">
+            <h1>Punto 1</h1>
+            <p>Crea un botón que cambie de color cuando esté en estado :hover.</p>
+            <button type="button">Boton</button>
+        </div>
+        <div class="part2">
+            <h1>Punto 2</h1>
+            <p>Usa :target para mostrar un mensaje oculto al hacer clic en un enlace.</p>
+                <a href="#borrar" type="link">Boton</a>
+            <p id="borrar">comenzamos</p>
+        </div>
+        <div class="part3">
+            <h1>Punto 3</h1>
+            <p>Da un estilo especial al primer hijo de un contenedor usando :first-child.</p>
+        <ul>
+            <p>Ejemplo</p>
+            <p>Ejemplo2</p>
+        </ul>
+        </div>
+        <div class="part4">
+            <h1>Punto 4</h1>
+            <p>Estiliza los campos de formulario no válidos usando :invalid.</p>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <button type="submit">Enviar</button>
+        </div>
+        <div class="part5">
+            <h1>Punto 5</h1>
+            <p>Resalta solo los campos de tipo email con :type.</p>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Enviar</button>
+        </div>
+        <div class="part6">
+            <h1>Punto 6</h1>
+            <p>Diseña un formulario donde el campo activo (:focus) cambie de borde.</p>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Enviar</button>
+        </div>
+        <div class="part7">
+            <h1>Punto 7</h1>
+            <p>Estiliza únicamente los elementos únicos de su tipo con :only-of-type.</p>
+            <h3>hola como estas</h3>
+        </div>
+        <div class="part8">
+            <h1>Punto 8</h1>
+            <h4>Aplica estilo solo al primer párrafo de una sección con :first-of-type.</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, nostrum non deleniti qui quam incidunt consequuntur, facilis aspernatur itaque veritatis nobis ipsam rerum illo ut debitis consectetur obcaecati excepturi vel.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum distinctio dignissimos molestias magnam officia natus. Fugiat, labore. Nihil, perspiciatis aspernatur? Vitae accusantium sunt harum? Dolores tempore aut praesentium laudantium ut.</p>
+        </div>
+        <div class="part9">
+            <h1>Punto 9</h1>
+            <p>Usa :root para definir una variable de color y aplícala.</p>
+            <h2>Fine</h2>
+        </div>
+        <div class="part10">
+            <h1>Punto 10</h1>
+            <p>Diseña una navegación con sus etiquetas semanticas que cambie su color al pasar
+                sobre cada link.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="part 11">
+            <h1>Punto 11</h1>
+            <p>Añade un icono antes de cada título con ::before.</p>
+            <h4>Icono antes </h4>
+        </div>
+        <div class="part12">
+            <h1>Parte 12</h1>
+            <p>Añade una línea decorativa después de cada párrafo con ::after.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, deserunt error facilis adipisci harum pariatur nesciunt minima sint rem cumque voluptatem ratione quia quasi. At minima eius nisi quasi rerum.</p>
+        </div>
+        <div class="part13">
+            <h1>Parte 13</h1>
+            <p>Crea un botón con un efecto de sombra usando ::after</p>
+            <button class="boton">Haz clic</button>
+        </div>
+        <div class="part14">
+            <h1>Parte 14</h1>
+            <p>Añade comillas antes y después de un bloque de cita.</p>
+            <ul class="citas">
+                <p>Cita 1</p>
+                <p>Cita 2</p>
             </ul>
-        </nav>
-    </div>
-    <div class="part 11">
-        <h1>Punto 11</h1>
-        <h2>Añade un icono antes de cada título con ::before.</h2>
+        </div>
+        <div class="part15">
+            <h1>Parte 15</h1>
+            <p>Diseña un input que tenga un ícono dentro usando ::before.</p>
+            <ul class="input-icon">
+                <input type="text" placeholder="Buscar...">
+            </ul>
+        </div>
+        <div class="part16">
+            <h1>Punto 16</h1>
+            <p>Coloca una imagen de forma relative y mueve su posición sin alterar el flujo.</p>
+            <img src="Stitch.webp" alt="Stitch">
+        </div>
+        <div class="part17">
+            <h1>Punto 17</h1>
+            <p>Crea una tarjeta que contenga un botón de eliminar con absolute</p>
+            <div class="box">
+                <h1>Tarjeta</h1>
+                <p>Esta es una tarjeta de ejemplo facil y sencilla para que contenga un boton</p>
+                <p>Como el siguiente:</p>
+                <button type="reset" class="boton" >Eliminar</button>
+            </div>
+        </div>
+        <div class="part18">
+            <h1>Punto 18</h1>
+            <p>Haz una barra de navegación fija en la parte superior (fixed).</p>
 
-    </div>
-    <div class="part12">
-        <h1>Parte 12</h1>
-        <h2>Añade una línea decorativa después de cada párrafo con ::after.</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, deserunt error facilis adipisci harum pariatur nesciunt minima sint rem cumque voluptatem ratione quia quasi. At minima eius nisi quasi rerum.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolores tempora, nam aliquid error quia aspernatur, explicabo veritatis qui impedit, quaerat necessitatibus ducimus a voluptatibus sint quidem suscipit excepturi officia!</p>
-    </div>
-    <div class="part13">
-        <h1>Parte 13</h1>
-        <h2>Crea un botón con un efecto de sombra usando ::after</h2>
-        <button class="boton">Haz clic</button>
-    </div>
-    <div class="part14">
-        <h1>Parte 14</h1>
-        <h2>Añade comillas antes y después de un bloque de cita.</h2>
-        
-    </div>
-
-  </body>
+            <ul class="contenid">
+                <h1>Bienvenido</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod iusto ullam quisquam voluptatem nihil illo alias asperiores rem fugiat libero! Doloremque porro harum repudiandae id, quos eaque obcaecati at voluptates?</p>
+                <p>Mas contenido si se quiere se agrega</p>
+            </ul>
+        </div>
+        <div class="part19">
+            <h1>Punto 19</h1>
+            <p>Apila dos cajas usando z-index para controlar qué caja aparece arriba, cada caja
+            debe tener un color de fondo diferente.</p>
+            <ul class="caja1">
+                <p>Hola</p>
+            </ul>
+            <ul class="caja2">
+                <p>Hello</p>
+            </ul>
+        </div>
+        <div class="part20">
+            <h1>Punto 20</h1>
+            <p>Diseña una card que se centre usando position y transform.</p>
+            <ul class="card">
+                <h2>Titulo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sit nobis quisquam illum dignissimos doloribus quia ipsa, adipisci aspernatur perferendis! Non repellat dolorem perferendis nulla ipsum. Expedita vitae ipsum nihil.</p>
+                <p>Gracias</p>
+            </ul>
+        </div>
+        <div class="part21">
+            <h1>Punto 21</h1>
+            <p>Define una variable global para color primario y aplícala a varios elementos</p>
+            <h3>Color primario</h3>
+            <h2>Color x</h2>
+            <h3>Colores locos</h3>
+        </div>
+        <div class="part22">
+            <h1>Punto 22</h1>
+            <p>Crea un tema oscuro cambiando variables en :root</p>
+            <p>Se volvio como un tema oscuro por asi decirlo, guardando los colores en :root</p>
+        </div>
+        <div class="part23">
+            <h1>Punto 23</h1>
+            <p>Usa una variable con valor fallback si no existe otra definida.</p>
+            <p>Se cambio los colores ya que no se definieron en :root asi que se tomo el segundo parametro</p>
+        </div>
+        <div class="part24">
+            <h1>Punto 24</h1>
+            <p>Define variables dentro de un scope local (por ejemplo, dentro de .card).</p>
+            <ul class="card">
+                <h2>Titulo</h2>
+                <h3>Aqui viene todo el contenido de la carta</h3>
+                <button>Leer más</button>
+            </ul>
+        </div>
+    </ul>
+</body>
 </html>
